@@ -181,7 +181,6 @@ class crawler
 
             $url_new = "https://pubmed.ncbi.nlm.nih.gov" . $myArray[$i]['href'];
 
-
             $htmlContent_ch = file_get_contents($url_new);
             $DOM_ch = new DOMDocument();
             libxml_use_internal_errors(1);
